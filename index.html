@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARAQUEDAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 p-3 bg-primary">
+                <a href="#" class="link-light me-5 mt-5">Sobre nós</a>
+                <a href="#" class="link-light me-5 mt-5">Planos</a>
+                <a href="#" class="link-light me-5 mt-5">Experiências</a>
+                
+            </div>
+            <div class="col-6 p-3 bg-primary text-end">
+                    <div class="dropdown">
+                        <img src="imagens/usuario.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Minha conta</a></li>
+    
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+    
+    
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mt-5 ">
+            
+        </div>
+    </div>
+    
+    <div class="text-center mt-5"> 
+        <img src="paraquedista.png"  data-bs-toggle="offcanvas" data-bs-target="#meuOffcanvas"aria-controls="offcanvasExample" style="width: 100px;">
+    </div>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="meuOffcanvas" aria-labelledby="meuOffcanvas">
+        <div class="p-5">
+            Home <br> </br>
+            Sobre nós <br></br>
+            Planos <br></br>
+            Comentários 
+        </div>
+    </div>
+    
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-12">
+
+                <div id="exemplo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#exemplo" data-bs-slide-to="0" 
+                                class="active" aria-current="true" aria-label="Slide 1">
+                        </button>
+                        <button type="button" data-bs-target="#exemplo" data-bs-slide-to="1"
+                                aria-current="true" aria-label="Slide 1"
+                        ></button>
+                        <button type="button" data-bs-target="#exemplo" data-bs-slide-to="2"
+                                aria-current="true" aria-label="Slide 1">
+                        </button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="bg-primary p-5">
+                                <h1>Já pensou em saltar de paraquedas?</h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-primary p-5">
+                                <h1>Sentir a adrenalina!</h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-primary p-5">
+                                <h1>Venha conosco nessa aventura!</h1>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#exemplo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#exemplo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Proximo</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4 p-1">
+                <div class="div">
+                    <div class="card">
+                        <img src="img_1.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            "Foi uma experiência incrivel! Nunca vou me esquecer." - Maria Silva
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div class="card">
+                    <img src="img_2.jpg" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        "Não tenho palavras para descrever essa vivência" - João Cardoso
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-1">
+                <div class="card">
+                    <img src="img_3.jpeg" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        "Recomendo a todos que querem sentir a emoção da vida" - Carolina Lopes
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col">
+
+                <div class="accordion" id="accordionExemplo">
+                    <h1>Conheça nosso planos</h1>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="titulo_1">
+                            <button class="accordion-button" 
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#area_1"
+                                    aria-expanded="true"
+                                    aria-controls="titulo_1"> Plano Bronze
+                            </button>
+                        </h2>
+
+                        <div id="area_1" class="accordion-collapse collapse" 
+                            aria-labelledby="titulo_1" 
+                            data-bs-parent="#accordionExemplo">
+                            <div class="accordion-body">
+                                    <ul>
+                                        Salto com instrutor <br>
+                                        Combo de fotos
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="titulo_2">
+                            <button class="accordion-button" 
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#area_2"
+                                    aria-expanded="true"
+                                    aria-controls="titulo_2">Plano Prata
+                            </button>
+                        </h2>
+
+                        <div id="area_2" class="accordion-collapse collapse" 
+                            aria-labelledby="titulo_2" 
+                            data-bs-parent="#accordionExemplo">
+                            <div class="accordion-body">
+                                <ul>
+                                    Salto com instrutor<br>
+                                    Combo de fotos<br>
+                                    Vídeo interativo
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="titulo_3">
+                            <button class="accordion-button" 
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#area_3"
+                                    aria-expanded="true"
+                                    aria-controls="titulo_3">Plano Ouro
+                            </button>
+                        </h2>
+
+                        <div id="area_3" class="accordion-collapse collapse" 
+                            aria-labelledby="titulo_3" 
+                            data-bs-parent="#accordionExemplo">
+                            <div class="accordion-body">
+                                <ul>
+                                    Curso preparatório<br>
+                                    Salto individual<br>
+                                    Combo de fotos<br>
+                                    Vídeo interativo
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <h1>Faça seu cadastro e agende seu salto conosco!</h1>
+                <div class="col-6 mt-5">
+                    <form action="#" method="post">
+
+                            <div class="form-floating col-12">
+                                <input type="text" name="" id="nome" class="form-control" placeholder=""> 
+                                <label for="a">Nome</label>
+                            </div>
+        
+                            <div class="form-floating col-12 mt-3">
+                                <input type="password" name="" id="apelido" class="form-control" placeholder=""> 
+                                <label for="a">Sobrenome</label>
+                            </div>
+
+                        
+                        <div class="form-check form-check-inline mt-2 mb-2">
+                        <input type="radio" name="genero" id="feminino" class="form-check-input">
+                        <label for="d" class="form-check-label">Feminino</label>
+                        </div>
+    
+    
+                        <div class="form-check form-check-inline mt-2 mb-2">
+                        <input type="radio" name="genero" id="masculino" class="form-check-input">
+                        <label for="e" class="form-check-label">Masculino</label>
+                        </div>
+    
+                        <div class="form-check form-check-inline mt-2 mb-2">
+                            <input type="radio" name="genero" id="outro" class="form-check-input">
+                            <label for="e" class="form-check-label">Outro</label>
+                        </div>
+    
+                            <div class="mb-3 form-floating col-12">
+                                <input type="email" name="" id="email" class="form-control" placeholder=""> 
+                                <label for="a">Email</label>
+                                
+                            </div>
+        
+                            <div class="mb-3 form-floating col-12">
+                                <input type="tel" name="" id="telefone" class="form-control" placeholder="(XX) XXXXX-XXXX"> 
+                                <label for="a">Telefone</label>
+                            </div>    
+    
+                        <div class="mb-3 mt-3 text-end">
+                            <img src="info.png" data-bs-toggle="popover" data-bs-title="Atenção" 
+                                data-bs-placement="bottom" data-bs-content="O numero inserido deve ser no modelo (XX)XXXXX-XXXX" style="width: 20px;">
+                                <button type="button" 
+                                    class="btn btn-success" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#minhaModal">
+                                    Enviar
+                                </button> 
+                            <input type="submit" value="Deletar" class="btn btn-danger btn-btn-inline ">
+                            
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="minhaModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Atenção</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Foi enviado um email para que sua conta seja verificada.
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        document.querySelector('#botao').addEventListener('click',()=>{
+            const notificacao = new bootstrap.Toast(document.querySelector('#notificacao'))
+            notificacao.show()
+        })
+    </script>
+</body>
+</html>
